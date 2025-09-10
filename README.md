@@ -15,8 +15,9 @@ mennockramer is the primary maintainer of this repository and site. the same nam
 
 ## Upload new content
 - Add your images and such to appropriate folders (e.g. /images)
-- Run `upload.sh` (Mac/Linux) or `upload.bat` (Windows) file, or run the following 3 commands in order:
+- Run `upload.sh` (Mac/Linux) or `upload.bat` (Windows) file, or run the following 4 commands in order:
   - `gulp`
+  - `git add *`
   - `git commit * -m "your message here"`
   - `git push`
 
