@@ -10,7 +10,7 @@ mennockramer is the primary maintainer of this repository and site. the same nam
 - Clone this repository with the command `git clone https://github.com/finnkramer/finnkramer.github.io.git`
 - Install Node.js (varies from system to system)
   - Recommended method: Install nvm, then run the command: `nvm install latest` 
-- `npm install --global gulp-cli`
+- Run the command `npm install`
 (The above two steps allow you to run `gulp` below which creates the thumbnails used in the site.)
 
 ## Upload new content
