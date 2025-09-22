@@ -24,13 +24,14 @@
 			'color #{_duration(transition)} ease-in-out',
 			'border-bottom-color #{_duration(transition)} ease-in-out'
 		));
-		border-bottom: dotted 1px;
+		//border-bottom: dotted 1px;
 		color: _palette(accent1);
 		text-decoration: none;
 
 		&:hover {
 			border-bottom-color: transparent;
 			color: _palette(accent1) !important;
+			font-style: italic;
 		}
 	}
 

@@ -6,14 +6,14 @@ image_thumbs_loc: "/images/thumbs"
 google_analytics: ""
 
 # UI configs
-title: "Finn Jules Kramer"
-subtitle: "See the world through my eyes!"
-author: "Finn Jules Kramer"
+title: "Finn Kramer"
+subtitle: ""
+author: "Finn Kramer"
 header:
  title: "Architecture & Horticulture"
- subtitle: "by Finn Jules Kramer"
+ subtitle: "by Finn Kramer"
 footer:
- name: "Finn Jules Kramer"
+ name: "Finn Kramer"
  bio: "lorem ipsum whatever you want to say"
 
 

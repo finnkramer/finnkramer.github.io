@@ -8,13 +8,36 @@
 <link rel="stylesheet" href="assets/css/ie9.css"/><![endif]-->
 <!--[if lte IE 8]>
 <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
-{% if site.google_analytics %}
-<!-- Google Analytics (GA4) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ site.google_analytics }}');
-</script>
-{% endif %}
+
+<!-- Header -->
+<header id="header">
+    <h1><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
+    <nav>
+        <ul>
+            <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Nav bar -->
+<div style="padding-left: 80px; padding-right: 80px; padding-top: 40px; ">
+
+    
+    <h2 style="display: flex; justify-content: center; display: flex; align-items: baseline ">
+        <span  style="width:25%;">
+                <a href="/projects">Projects</a>
+        </span>
+        <span style="width:50%; text-align: center; font-size: 2em;">
+                <a href="index.html">{{site.title}}</a>  
+        </span>
+
+          <span style="width:25%; text-align: right;">
+          
+                <a href="/info" >Info</span></a>
+            
+        </span>
+    </h2>
+    
+    
+    
+</div>
