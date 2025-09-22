@@ -1,5 +1,9 @@
 @echo off
 echo Upload script running. Ctrl+C to stop at any time.
+echo Fetching changes from remote repository.
+call git pull
+echo Add your new content to folders, then press any key to continue.
+pause >nul
 echo Beginning image processing.
 call gulp
 echo Image processing complete. Ignore any warnings above so long as it successfully finished.
