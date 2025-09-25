@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<!-- Wrapper -->
+<div id="wrapper">        
+    <!-- Main -->
+    <div class="inner split">
+                <div>
+                    <section>
+                        <h2>{{ site.footer.name }}</h2>
+                        <p>{{ site.footer.bio }}</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Follow me on ...</h2>
+                        <ul class="icons">
+                            {% if site.social_urls.facebook %}
+                                <li>
+                                    <a href="{{ site.social_urls.facebook }}" class="icon fa-facebook">
+                                        <span class="label">Facebook</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social_urls.twitter %}
+                                <li>
+                                    <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter">
+                                        <span class="label">Twitter</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social_urls.instagram %}
+                                <li>
+                                    <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
+                                        <span class="label">Instagram</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                            {% if site.social_urls.linkedin %}
+                                <li>
+                                    <a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin">
+                                        <span class="label">LinkedIn</span>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        </ul>
+                    </section>
+                    <p >
+                        Site by: {{ site.site_author }}. Modified from: <a href="{{site.parent_theme}}">this theme.</a>
+                    </p>
+                </div>
+            </div>
+    
+</div>
+
