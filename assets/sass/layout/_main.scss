@@ -18,17 +18,15 @@
 		-webkit-tap-highlight-color: rgba(255,255,255,0);
 
 		.thumb {
-			@include vendor('transition', (
-				'opacity 1.25s ease-in-out'
-			));
 			@include vendor('pointer-events', 'auto');
 			-webkit-tap-highlight-color: rgba(255,255,255,0);
 			opacity: 1;
-			overflow: hidden;
+			overflow: visible;
 			position: relative;
 			border: 20px; 
 			border-style:solid; 
 			border-color: #{_palette(bg)};
+			margin-bottom:2em;
 			
 			&:after {
 				@include vendor('pointer-events', 'none');
@@ -56,11 +54,11 @@
 				
 			}
 
-			> h2 {
+			 h2 {
 				@include vendor('pointer-events', 'none');
-				bottom: (1.5em / 0.8);
-				font-size: 0.8em;
-				left: (1.75em / 0.8);
+				// bottom: (1.5em / 0.8);
+				font-size: 1em;
+				left: 0;
 				margin: 0;
 				position: absolute;
 				z-index: 1;
@@ -95,7 +93,6 @@
 		}
 
 		body.content-active & {
-			@include vendor('filter', 'blur(6px)');
 
 			&:after {
 				@include vendor('pointer-events', 'auto');

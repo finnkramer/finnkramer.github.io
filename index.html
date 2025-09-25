@@ -18,18 +18,21 @@ layout: default
         {% for image in site.static_files%}
             {% assign file_path_array = image.path | split:'/'  %}
             {% if file_path_array[1] == "images" %}
+            {% assign file_date_array = image.modified_time | date_to_xmlschema | split:"-" %}
             <div class="thumb">
-                <a href="{{ site.baseurl }}/projects/{{ image.basename }}.html" class="image">
-                    <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" 
+                <a href="{{ site.baseurl }}/projects/{{ image.basename }}.html">
+                    <img src="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}"  class="image" 
                         alt="{{image.name}}" 
                         data-name="{{ image.name }}"
                         style="object-fit:contain"
                         width="100%"    
                         height="100%"
                     />
-                </a>
-                <!--<h2></h2>
-                <p></p>-->
+                    <h2 style="justify-content: center; display: flex; position:absolute; align-items: baseline; width:100%"> 
+                        <span  style="width:79%;">{{image.basename}}</span>
+                        <span style="width:20%; text-align: right;">{{file_date_array[0]}}</span>   
+                    </h2>
+                </a>       
             </div>
             {% endif %}
         {% endfor %}
