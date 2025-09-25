@@ -8,16 +8,11 @@ mennockramer is the primary maintainer of this repository and site. the same nam
 ## Setup:
 - Install Git (varies from system to system)
 - Clone this repository with the command `git clone https://github.com/finnkramer/finnkramer.github.io.git`
-- Install Node.js (varies from system to system)
-  - Recommended method: Install nvm, then run the command: `nvm install latest` 
-- Run the command `npm install`
-(The above two steps *should* allow you to run `gulp` below which creates the thumbnails used in the site.)
 
 ## Upload new content
 Follow these steps:
   - `git pull`
   -  Add your images and such to appropriate folders (e.g. /images)
-  - `gulp`
   - `git add *`
   - `git commit * -m "your message here"`
   - `git push`
