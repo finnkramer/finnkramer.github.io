@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">        
+    <!-- Main -->
+
+    <h2 style="text-align: center">
+        <a href="architecture.html">architecture</a>
+          | 
+        <a href="index.html">all</a>
+          | 
+        <a href="horticulture.html">horticulture</a>
+    </h2>
+
+    <h1 style="text-align: center">{{ page.name }}</h1>
+
+    {{ content }}
+
+    <br>
+    <h2 style="text-align: center">Project Gallery</h2>
+    {% assign folder_level = 2 %}
+    {% assign folder_name = page.code  %}
+    {% assign images_are_project_links = false %}
+    {% include gallery.html %}
+</div>
+
+ 
+    

@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">        
+    <!-- Main -->
+
+    <h2 style="text-align: center">
+        <a href="architecture.html">architecture</a>
+          | 
+        <a href="index.html">all</a>
+          | 
+        <a href="horticulture.html">horticulture</a>
+    </h2>
+ 
+
+<ul>
+  {% for project in site.projects %}
+    <li>
+      <a href="{{ project.url }}">{{ project.name }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+
+
+use project.excerpt in hover menu?
+
+</div>
