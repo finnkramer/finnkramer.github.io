@@ -1,0 +1,34 @@
+
+
+<div id="main" style="padding-left: 60px; padding-right: 60px;">
+        {% assign sorted_statics = site.static_files | sort_natural %}
+        {% for image in site.static_files %}
+            {% assign file_path_array = image.path | split:'/'  %}
+            {% if file_path_array[folder_level] == folder_name %}
+            {% assign file_name_array = image.basename | split:"_" %}
+            {% assign file_year_from_name = file_name_array[1] | slice: 0,4 %}
+            <div class="thumb">
+                {% if images_are_project_links %}
+                <a href="{{ site.baseurl }}/projects/{{ file_name_array[0] }}.html">
+                {% else %} 
+                <a>
+                {% endif %}
+                    <img src="{{ site.baseurl }}{{ image.path }}"  class="image" 
+                        alt="{{image.name}}" 
+                        data-name="{{ image.name }}"
+                        style="object-fit:contain"
+                        width="100%"    
+                        height="100%"
+                    />
+                    <h2 style="justify-content: center; display: flex; position:absolute; align-items: baseline; width:100%"> 
+                        <span  style="width:79%;">{{ file_name_array[0] }}: {{file_name_array[2]}}</span>
+                        <span style="width:20%; text-align: right;">{{file_year_from_name}}</span>   
+                    </h2>
+                </a>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>    
+
+
+
